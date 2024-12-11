@@ -6,9 +6,6 @@ resource "aws_eip" "nat" {
   tags = {
     Name = "nat"
   }
-
-  # To ensure allocation in ap-southeast-2, specify availability_zone
-  availability_zone = "ap-southeast-2a"
 }
 
 # Resource: aws_nat_gateway
