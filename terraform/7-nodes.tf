@@ -31,7 +31,7 @@ resource "aws_iam_role_policy_attachment" "nodes-AmazonEC2ContainerRegistryReadO
 # Resource: aws_eks_node_group
 # https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/eks_node_group
 resource "aws_eks_node_group" "general" {
-  cluster_name  = aws_eks_cluster.demo.name # Update if your cluster is in a different region
+  cluster_name  = aws_eks_cluster.ekstreme.name # Update if your cluster is in a different region
   node_group_name = "general"
   node_role_arn  = aws_iam_role.nodes.arn
 
